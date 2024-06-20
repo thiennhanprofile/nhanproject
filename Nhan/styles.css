@@ -1,0 +1,88 @@
+.slider {
+  padding-top: 112px;
+  padding-left: 100px;
+  font-family: Inter;
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 52.9px;
+  text-align: left;
+}
+
+.button-custom {
+  width: 150px;
+  height: 70px;
+  padding: 9.74px 22.27px 9.74px 22.27px;
+  gap: 6.96px;
+  border-radius: 2.78px 0px 0px 0px;
+  opacity: 0px;
+  background: #4caf4f;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 16.71px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.img-custom {
+  padding-top: 66px;
+  width: 560px;
+  height: 580px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 180px;
+}
+.our-custom {
+    width: 40px;
+    height: 40px;
+
+}
+.logo-client {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center; 
+    gap: 20px;
+  }
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.pagination li {
+  margin-right: 5px;
+}
+.pagination li a {
+  text-decoration: none;
+  width: 10px; 
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4caf4f;
+  color: #4caf4f;
+  font-size: 18px;
+}
+.pagination li a:hover {
+  background-color: #4caf4f;
+}
+.demo {
+  text-align: center;
+  margin-top: 100px;
+}
+.footer{
+  background-color:#263238;
+  ;
+  margin-top: 20px;
+}
+.footer p{
+  font-size: 15px;
+  color: #ffffff;
+}
+.footer h5{
+  color: #ffffff;
+}
