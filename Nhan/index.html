@@ -1,587 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Page Title</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!-- Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
-    <title>Hello, world!</title>
   </head>
   <body>
     <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <div class="slider">
+      <div class="container">
+        <!-- Slider -->
+        <div class="slider">
+          <div class="row">
+            <div class="col-md-8 d-flex flex-column justify-content-center">
               <p>Lessons and insights</p>
-              <span style="color: #4caf4f">from 8 years</span>
-              <p
-                style="
-                  font-family: Inter;
-                  font-size: 23px;
-                  font-weight: 400;
-                  line-height: 16.71px;
-                  text-align: left;
-                  color: #717171;
-                  margin-top: 40px;
-                "
-              >
+              <span style="color: green">from 8 years</span>
+              <h6>
                 Where to grow your business as a photographer: site or social
                 media?
-              </p>
-              <button class="button-custom">Register</button>
+              </h6>
+              <div>
+                <button class="button-custom">Register</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="./imgs/Illustration.png" alt="ill" class="img-custom" />
             </div>
           </div>
-          <div class="col">
-            <img src="./imgs/Illustration.png" alt="ill" class="img-custom" />
-          </div>
           <ul class="pagination">
-            <li><a href="#"></a></li>
+            <li class="active"><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
           </ul>
         </div>
-      </div>
-    </section>
-    <!-- Our clients -->
+        <!-- End Slider -->
 
-    <div class="clients">
-      <div class="container">
-        <p
-          style="
-            padding-top: 22px;
-            font-family: Inter;
-            font-size: 40px;
-            font-weight: 600;
-            line-height: 30.63px;
-            text-align: center;
-          "
-        >
-          Out Clients
-        </p>
-        <p
-          style="
-            font-family: Inter;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 16.71px;
-            text-align: center;
-            color: #717171;
-          "
-        >
-          We have been working with some Fortune 500+ clients
-        </p>
-        <div class="logo-client">
-          <img src="./imgs/our1.png" alt="ill" class="our-custom" />
-          <img src="./imgs/our2.png" alt="ill" class="our-custom" />
-          <img src="./imgs/our3.png" alt="ill" class="our-custom" />
-          <img src="./imgs/our4.png" alt="ill" class="our-custom" />
-          <img src="./imgs/our5.png" alt="ill" class="our-custom" />
-          <img src="./imgs/our6.png" alt="ill" class="our-custom" />
-          <img src="./imgs/our7.png" alt="ill" class="our-custom" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Community -->
-    <div class="Community">
-      <div class="container">
-        <p
-          style="
-            padding-top: 30px;
-            font-family: Inter;
-            font-size: 40px;
-            font-weight: 600;
-            line-height: 30.63px;
-            text-align: center;
-          "
-        >
-          Manage your entire community<br />
-          in a single system
-        </p>
-        <p
-          style="
-            font-family: Inter;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 16.71px;
-            text-align: center;
-            color: #717171;
-          "
-        >
-          Who is Nextcent suitable for?
-        </p>
-        <div
-          class="row"
-          style="grid-template-columns: repeat(3, 1fr); gap: 120px"
-        >
-          <div
-            class="col"
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            <img src="./imgs/iconcm1.png" alt="ill" class="centered-image" />
-            <p
-              style="
-                font-family: Inter;
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 25.06px;
-                text-align: center;
-              "
-            >
-              Membership Organisations
-            </p>
-            <p
-              style="
-                font-family: Inter;
-                font-size: 15px;
-                font-weight: 700;
-                line-height: 25.06px;
-                text-align: center;
-                color: #717171;
-              "
-            >
-              Our membership management software provides full automation of
-              membership renewals and payments
-            </p>
+        <!-- Our clients -->
+        <div class="clients">
+          <div class="suppression">
+            <h1>Our Clients</h1>
+            <h6>We have been working with some Fortune 500+ clients</h6>
           </div>
-
-          <div
-            class="col"
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            <img src="./imgs/iconcm2.png" alt="ill" class="centered-image" />
-            <p
-              style="
-                font-family: Inter;
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 25.06px;
-                text-align: center;
-              "
-            >
-              National <br />Associations
-            </p>
-            <p
-              style="
-                font-family: Inter;
-                font-size: 15px;
-
-                font-weight: 700;
-                line-height: 25.06px;
-                text-align: center;
-                color: #717171;
-              "
-            >
-              Our membership management software provides full automation of
-              membership renewals and payments
-            </p>
-          </div>
-
-          <div
-            class="col"
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            <img src="./imgs/iconcm3.png" alt="ill" class="centered-image" />
-            <p
-              style="
-                font-family: Inter;
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 25.06px;
-                text-align: center;
-              "
-            >
-              Clubs And <br />Groups
-            </p>
-            <p
-              style="
-                font-family: Inter;
-                font-size: 15px;
-
-                font-weight: 700;
-                line-height: 25.06px;
-                text-align: center;
-                color: #717171;
-              "
-            >
-              Our membership management software provides full automation of
-              membership renewals and payments
-            </p>
-          </div>
-        </div>
-      </div>
-     </div>
-
-
-          <!-- Fame -->
-          <div class="Fame">
-            <div class="container">
-              <div class="row" style="margin-top: -60px">
-                <div class="col">
-                  <img
-                    src="./imgs/Frame.png"
-                    alt="fm"
-                    style="width: 500px; height: 450px"
-                  />
-                </div>
-                <div class="col" style="margin-top: 60px">
-                  <p
-                    style="
-                      font-family: Inter;
-                      font-size: 40px;
-                      font-weight: 600;
-                      line-height: 30.63px;
-                      text-align: left;
-                    "
-                  >
-                    The unseen of spending three years at Pixelgrade
-                  </p>
-
-                  <p
-                    style="
-                      font-family: Inter;
-                      font-size: 18px;
-                      font-weight: 400;
-                      line-height: 13.92px;
-                      text-align: left;
-                      color: #717171;
-                    "
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    sit amet justo ipsum. Sed accumsan quam vitae est varius
-                    fringilla. Pellentesque placerat vestibulum lorem sed porta.
-                    Nullam mattis tristique iaculis. Nullam pulvinar sit amet
-                    risus pretium auctor. Etiam quis massa pulvinar, aliquam
-                    quam vitae, tempus sem. Donec elementum pulvinar odio.
-                  </p>
-                  <button class="button-custom" style="text-align: left">Learn More</button>
-                </div>
-              </div>
+          <div class="logo-client">
+            <div>
+              <img src="./imgs/our1.png" alt="our" class="our-custom" />
+            </div>
+            <div>
+              <img src="./imgs/our2.png" alt="ill" class="our-custom" />
+            </div>
+            <div>
+              <img src="./imgs/our3.png" alt="ill" class="our-custom" />
+            </div>
+            <div>
+              <img src="./imgs/our4.png" alt="ill" class="our-custom" />
+            </div>
+            <div>
+              <img src="./imgs/our5.png" alt="ill" class="our-custom" />
+            </div>
+            <div>
+              <img src="./imgs/our6.png" alt="ill" class="our-custom" />
+            </div>
+            <div>
+              <img src="./imgs/our7.png" alt="ill" class="our-custom" />
             </div>
           </div>
-          <!-- Help -->
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-7">
-                <p style="font-family: Inter;
-                font-size: 30px;
-                font-weight: 600;
-                line-height: 30.63px;
-                text-align: left;
-                ">Helping a local <br>business reinvent itself</br></p>
-               <p style="color: #18191F;font-family: Inter;
-               font-size: 15px;
-               font-weight: 400;
-               line-height: 16.71px;
-               text-align: left;
-               
+        </div>
+        <!-- End Our clients -->
 
-
-               ">We reached here with our hard work and dedication</p>
+        <!-- Community -->
+        <div class="community">
+          <div class="suppression">
+            <h1>Manage your entire community in a single system</h1>
+            <h6>Who is Nextcent suitable for?</h6>
+          </div>
+          <div class="column-item md-3">
+            <div class="item-info">
+              <div>
+                <img
+                  src="./imgs/iconcm1.png"
+                  alt="ill"
+                  class="centered-image"
+                />
               </div>
-              <!-- <div class="col-sm-5">
-          <div class="col">
-          <img src="./imgs/help1.png" alt="ill" class="centered-image" />
-          <p>2,245,341</p>
-          <p>Members</p>
-          <img src="./imgs/help2.png" alt="ill" class="centered-image" />
+              <h1>Membership Organisations</h1>
+              <h6>
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </h6>
+            </div>
+            <div class="item-info">
+              <div>
+                <img
+                  src="./imgs/iconcm2.png"
+                  alt="ill"
+                  class="centered-image"
+                />
+              </div>
+              <h1>National Associations</h1>
+              <h6>
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </h6>
+            </div>
+            <div class="item-info">
+              <div>
+                <img
+                  src="./imgs/iconcm3.png"
+                  alt="ill"
+                  class="centered-image"
+                />
+              </div>
+              <h1>Clubs And Groups</h1>
+              <h6>
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </h6>
+            </div>
+          </div>
         </div>
-        <div class="col">
-
-          <img src="./imgs/help3.png" alt="ill" class="centered-image" />
-          <img src="./imgs/help4.png" alt="ill" class="centered-image" />
+        <!-- End Community -->
+        <!-- Fame -->
+        <div class="fame">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="./imgs/Frame.png" alt="fame" class="img-fame" />
+            </div>
+            <div class="col-lg-7 d-flex flex-column justify-content-center">
+              <h1 class="text-left">The unseen of spending three years at Pixelgrade</h1>
+              <h6 class="text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+                Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+                tristique iaculis. Nullam pulvinar sit amet risus pretium
+                auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus
+                sem. Donec elementum pulvinar odio.
+              </h6>
+              <button class="button-custom">Learn More</button>
+            </div>
+          </div>
         </div>
-        </div> -->
-              
-                <div class="col col-5">
-                  <div class="row">
-                    <div class="col col-6">
-                      <div class="row">
-                        <div class="sub-col">
-                          <div
-                            class="content"
-                            style="display: flex; align-items: center"
-                          >
-                            <img
-                              src="./imgs/help1.png"
-                              alt="ill"
-                              class="centered-image"
-                            />
-                            <p style="font-family: Inter;
-                            font-size: 19.49px;
-                            font-weight: 700;
-                            line-height: 25.06px;
-                            text-align: left;
-                            ">2,245,341<br>Members</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="sub-col">
-                          <div
-                            class="content"
-                            style="display: flex; align-items: center"
-                          >
-                            <img
-                              src="./imgs/help3.png"
-                              alt="ill"
-                              class="centered-image"
-                            />
-                            <p style="font-family: Inter;
-                            font-size: 19.49px;
-                            font-weight: 700;
-                            line-height: 25.06px;
-                            text-align: left;
-                            "><span>828,867</span><br> <span>Event Bookings</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col col-6">
-                      <div class="row">
-                        <div class="sub-col">
-                          <div
-                            class="content"
-                            style="display: flex; align-items: center"
-                          >
-                            <img
-                              src="./imgs/help2.png"
-                              alt="ill"
-                              class="centered-image"
-                            />
-                            <p>46,328 <br />Clubs</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="sub-col">
-                          <div
-                            class="content"
-                            style="display: flex; align-items: center"
-                          >
-                            <img
-                              src="./imgs/help4.png"
-                              alt="ill"
-                              class="centered-image"
-                            />
-                            <p>1,926,436 <br />Payments</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <!--End Fame-->
+        <!--Help-->
+        <div class="help">
+          <div class="row">
+            <div class="col-sm-6 d-flex flex-column justify-content-center">
+              <h1 class="text-left">Helping a local</h1>
+              <span style="color: green">business reinvent itself</span>
+              <h5>We reached here with our hard work and dedication</h5>
+            </div>
+            <div class="col-6 d-flex">
+              <div class="flex-fill">
+                <div class="d-flex">
+                  <div class="help-icon">
+                    <img
+                      src="./imgs/help1.png"
+                      alt="ill"
+                      class="centered-image"
+                    />
+                  </div>
+                  <div class="help-info">
+                    <h3>2,245,341</h3>
+                    <h6>Members</h6>
                   </div>
                 </div>
-
-
-
+                <div class="d-flex">
+                  <div class="help-icon">
+                    <img
+                      src="./imgs/help2.png"
+                      alt="ill"
+                      class="centered-image"
+                    />
+                  </div>
+                  <div class="help-info">
+                    <h3>828,867</h3>
+                    <h6>Event Bookings</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-fill">
+                <div class="d-flex">
+                  <div class="help-icon">
+                    <img
+                      src="./imgs/help3.png"
+                      alt="ill"
+                      class="centered-image"
+                    />
+                  </div>
+                  <div class="help-info">
+                    <h3>46,328</h3>
+                    <h6>Clubs</h6>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="help-icon">
+                    <img
+                      src="./imgs/help4.png"
+                      alt="ill"
+                      class="centered-image"
+                    />
+                  </div>
+                  <div class="help-info">
+                    <h3>1,926,436</h3>
+                    <h6>Payments</h6>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <!--End Help-->
+        <!-- Site -->
+        <div class="site">
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="./imgs/pana.png" alt="pana" class="img-fame" />
+            </div>
+            <div class="col-lg-7 d-flex flex-column justify-content-center">
+              <h1 class="text-left">How to design your site footer like we did</h1>
+              <h6>
+                Donec a eros justo. Fusce egestas tristique ultrices. Nam
+                tempor, augue nec tincidunt molestie, massa nunc varius arcu, at
+                scelerisque elit erat a magna. Donec quis erat at libero
+                ultrices mollis. In hac habitasse platea dictumst. Vivamus
+                vehicula leo dui, at porta nisi facilisis finibus. In euismod
+                augue vitae nisi ultricies, non aliquet urna tincidunt. Integer
+                in nisi eget nulla commodo faucibus efficitur quis massa.
+                Praesent felis est, finibus et nisi ac, hendrerit venenatis
+                libero. Donec consectetur faucibus ipsum id gravida.
+              </h6>
+              <button class="button-custom" style="">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!--End Site-->
+        <!--Customer-->
+        <div class="customer">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./imgs/image1.png" alt="img1" class="csimg" />
+            </div>
+            <div class="col-md-8">
+              <div>
+                <p>
+                  Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                  lobortis sem dui, vel rutrum risus tincidunt ullamcorper.
+                  Proin eu enim metus. Vivamus sed libero ornare, tristique quam
+                  in, gravida enim. Nullam ut molestie arcu, at hendrerit elit.
+                  Morbi laoreet elit at ligula molestie, nec molestie mi
+                  blandit. Suspendisse cursus tellus sed augue ultrices, quis
+                  tristique nulla sodales. Suspendisse eget lorem eu turpis
+                  vestibulum pretium. Suspendisse potenti. Quisque malesuada
+                  enim sapien, vitae placerat ante feugiat eget. Quisque
+                  vulputate odio neque, eget efficitur libero condimentum id.
+                  Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                </p>
+                <h4 class="colorgr">Tim Smith</h4>
+                <h6>British Dragon Boat Racing Association</h6>
+              </div>
+              <div class="logo-client">
+                <div>
+                  <img src="./imgs/our1.png" alt="our" class="our-custom" />
+                </div>
+                <div>
+                  <img src="./imgs/our2.png" alt="ill" class="our-custom" />
+                </div>
+                <div>
+                  <img src="./imgs/our3.png" alt="ill" class="our-custom" />
+                </div>
+                <div>
+                  <img src="./imgs/our4.png" alt="ill" class="our-custom" />
+                </div>
+                <div>
+                  <img src="./imgs/our5.png" alt="ill" class="our-custom" />
+                </div>
+                <div>
+                  <img src="./imgs/our6.png" alt="ill" class="our-custom" />
+                </div>
+                <div>
+                  <img src="./imgs/our7.png" alt="ill" class="our-custom" />
+                </div>
+                <div>
+                  <a class="colorgr">Meet all customers</a>
+                  <img src="./imgs/Right.png" alt="ill" class="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Customer-->
+        <!--Marketing-->
+        <div class="marketing">
+          <div class="suppression">
+            <h1>Caring is the new marketing</h1>
+            <h6>
+              The Nextcent blog is the best place to read about the latest
+              membership insights, trends and more. See who's joining the
+              community, read about how our community are increasing their
+              membership income and lot's more.​
+            </h6>
+          </div>
+          <div class="mkt row justify-content-around">
+            <div class="mkt-img col-lg-4">
+              <img src="./imgs/mkt1.png" alt="img1" class="mktimg" />
+              <div class="mkt-info">
+                <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
+                <div>
+                  <a class="colorgr">Read More</a>
+                  <img src="./imgs/Right.png" alt="ill" class="" />
+                </div>
+              </div>
+            </div>
+            <div class="mkt-img col-lg-4">
+              <img src="./imgs/mkt2.png" alt="img1" class="mktimg" />
+              <div class="mkt-info">
+                <h4>What are your safeguarding responsibilities and how can you manage them?</h4>
+                <div>
+                  <a class="colorgr">Read More</a>
+                  <img src="./imgs/Right.png" alt="ill" class="" />
+                </div>
+              </div>
+            </div>
+            <div class="mkt-img col-lg-4">
+              <img src="./imgs/mkt3.png" alt="img1" class="mktimg" />
+              <div class="mkt-info">
+                <h4>Revamping the Membership Model with Triathlon Australia</h4>
+                <div>
+                  <a class="colorgr">Read More</a>
+                  <img src="./imgs/Right.png" alt="ill" class="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+            
+          </div>
+        
+        <!--End Marketing-->
+        <!-- demo -->
+        <div class="demo">
+          <div>
+          <h1 class="suppression">Pellentesque suscipit fringilla libero eu.</h1>
+        </div>
+        <button class="button-custom">
+          <span class="button-text">Get a demo</span>
+          <span class="button-icon">
+            <img src="./imgs/Right.png" alt="ill" class="our-custom" />
+            </svg>
+          </span>
+        </button>
+         </div>
+        <!--End demo -->
+      </div>
 
-
-          <!-- customer -->
-            <div class="customer">
-              <div class="container">
+        <!--Footer -->
+        <footer class="bg-dark text-light py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="./imgs/Logo.png" alt="Logo" style="">
+                <p>Copyright © 2020 Landify UI Kit.</p>
+                <p>All rights reserved</p>
+                <div class="social-icons">
+                  <img src="./imgs/ytb.png" alt="YouTube" style="">
+                  <img src="./imgs/web.png" alt="Web" style="">
+                  <img src="./imgs/x.png" alt="X" style="">
+                  <img src="./imgs/ins.png" alt="Instagram" style="">
+                </div>
+              </div>
+        
+              <div class="col-md-7">
                 <div class="row">
-                  <div class="col-4">
-                    <img src="./imgs/image1.png" alt="img1" style="width: 226.92px;
-                    height: 226.92px;
-                    gap: 0px;
-                    border-radius: 5.57px 0px 0px 0px;
-                    opacity: 0px;
-                    ";>
-
+                  <div class="col-md-4">
+                    <h3>Company</h3>
+                    <h>About us</h>
+                    <p>Blog</p>
+                    <p>Contact us</p>
+                    <p>Pricing</p>
+                    <p>Testimonials</p>
                   </div>
-                  <div class="col-8">
-                    <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
-                    <p>Tim Smith</p>
-                    <p>British Dragon Boat Racing Association</p>
-                    <div class="logo-client">
-                      <img src="./imgs/our1.png" alt="ill" class="our-custom" />
-                      <img src="./imgs/our2.png" alt="ill" class="our-custom" />
-                      <img src="./imgs/our3.png" alt="ill" class="our-custom" />
-                      <img src="./imgs/our4.png" alt="ill" class="our-custom" />
-                      <img src="./imgs/our5.png" alt="ill" class="our-custom" />
-                      <img src="./imgs/our6.png" alt="ill" class="our-custom" />
-                      <p>Meet all customers </p>
+                  <div class="col-md-4">
+                    <h3>Support</h3>
+                    <p>Terms of service</p>
+                    <p>Help center</p>
+                    <p>Legal</p>
+                    <p>Privacy policy</p>
+                    <p>Status</p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Stay up to date</h3>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Your email Address">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
                     </div>
-                    
                   </div>
+                  
                 </div>
               </div>
             </div>
-          <!-- customer -->
-          <div class="container">
-
-            <div class="row">
-              <p
-              style="
-                padding-top: 22px;
-                font-family: Inter;
-                font-size: 40px;
-                font-weight: 600;
-                line-height: 30.63px;
-                text-align: center;
-              "
-            >Caring is the new marketing</p>
-            <p
-            style="
-              font-family: Inter;
-font-size: 11.14px;
-font-weight: 400;
-line-height: 16.71px;
-text-align: center;
-
-              color: #717171;
-            "
-          >The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
-
-            </div>
-                <div class="row" style="text-align: center;justify-content: center;gap: 50px">
-            <div class="col-4" style="width: 256.15px;
-            height: 199.08px;
-            
-            ">
-              <img src="./imgs/mkt1.png" alt="1" style="width: 256.15px;
-              height: 199.08px;
-              gap: 0px;
-              border-radius: 5.57px 0px 0px 0px;
-              opacity: 0px;
-              ";>
-              <p>Creating Streamlined Safeguarding Processes with OneRen</p>
-              
-            </div>
-            <div class="col-4"  style="width: 256.15px;
-            height: 199.08px;
-            
-            ">
-              <img src="./imgs/mkt2.png" alt="1" style="width: 256.15px;
-              height: 199.08px;
-              gap: 0px;
-              border-radius: 5.57px 0px 0px 0px;
-              opacity: 0px;
-              ";>
-              
-              <p >What are your safeguarding responsibilities and how can you manage them</p>
-
-            </div>
-            <div class="col-4"  style="width: 256.15px;
-            height: 199.08px;
-            
-            ">
-              <img src="./imgs/mkt3.png" alt="1" style="width: 256.15px;
-              height: 199.08px;
-              gap: 0px;
-              border-radius: 5.57px 0px 0px 0px;
-              opacity: 0px;
-              ";>
-              <p>Revamping the Membership Model with Triathlon Australia</p>
-
-            </div>
           </div>
+        </footer>     
+        <!--End Footer -->
 
-          </div>
-          <!-- demo -->
-           <div class="demo">
-            <p
-            style="
-              padding-top: 22px;
-              font-family: Inter;
-              font-size: 40px;
-              font-weight: 600;
-              line-height: 30.63px;
-              text-align: center;
-            "
-          >Pellentesque suscipit fringilla libero eu.</p>
-          <button class="button-custom">Get a demo</button>
-           </div>
-
-          <!-- footer -->
-
-           <div class="footer">
-<div class="row">
-
-              <div class="col-5" style="
-      text-align: center;">
-                <img src="./imgs/Logo.png" alt="" style=" ">
-<p>Copyright © 2020 Landify UI Kit.</p>
-<p>All rights reserved</p>
-<img src="./imgs/ytb.png" alt="" style="";>
-<img src="./imgs/web.png" alt="" style="";>
-<img src="./imgs/x.png" alt="" style="";>
-<img src="./imgs/ins.png" alt="" style="";>
-
-
-              </div>
-              <div class="col-2">
-                <h5>Company</h5>
-                <p>About us</p>
-                <p>Blog</p>
-                <p>Contact us</p>
-                <p>Pricing</p>
-                <p>Testimonials</p>
-
-
-                </div>
-                <div class="col-2">
-                  <h5>Support</h5>
-                  <p>Terms of service</p>
-                  <p>Help center</p>
-
-                  <p>Legal</p>
-                  <p>Privacy policy</p>
-                  <p>Status</p>
-
-                  </div>
-                  <div class="col-3">
-                    <h5>Stay up to date</h5>
-                    <div class="form-group">
-                      <div style="display: flex; align-items: center;">
-                        <input type="text" class="form-control" placeholder="Your email Address" style="">
-                      </div>
-                    </div>
-                    
-                    </div>
-              </div>
-            </div>
-
-
-
-
-
-          </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"
-></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
