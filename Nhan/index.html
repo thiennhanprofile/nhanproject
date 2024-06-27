@@ -20,8 +20,25 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet" />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,10 +48,75 @@
   <body>
     <section>
       <div class="container">
+        <!-- Narbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div>
+              <img src="./imgs/Logo.jpg" alt="Logo" class="imglogo" />
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="./imgs/Logo.jpg" alt="Logo" class="imglogo" />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 p-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Community</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                </ul>
+                <div>
+                  <button class="button-custom">Register Now -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
         <!-- Slider -->
         <div class="slider pt-5 fw-bold">
+          <div style="background-color: #031837"></div>
           <div class="row">
-            <div class="col-lg-8 d-flex flex-column justify-content-center">
+            <div class="col-md-8 d-flex flex-column justify-content-center">
               <p>Lessons and insights</p>
               <span class="colorgr">from 8 years</span>
               <h6>
@@ -45,7 +127,7 @@
                 <button class="button-custom">Register</button>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <img src="./imgs/Illustration.png" alt="ill" class="img-custom" />
             </div>
           </div>
@@ -96,7 +178,7 @@
             <h1>Manage your entire community in a single system</h1>
             <h6>Who is Nextcent suitable for?</h6>
           </div>
-          <div class="column-item d-flex justify-content-around">
+          <div class="column-item d-flex justify-content-around flex-wrap">
             <div class="item-info text-center">
               <div>
                 <img
@@ -142,7 +224,7 @@
         <!-- Fame -->
         <div class="fame pt-4">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-lg-5">
               <img src="./imgs/Frame.png" alt="fame" class="img-fame" />
             </div>
             <div class="col-lg-7 d-flex flex-column justify-content-center">
@@ -170,7 +252,7 @@
               <h1 class="text-left-cl">business reinvent itself</h1>
               <h6>We reached here with our hard work and dedication</h6>
             </div>
-            <div class="col-md-6 d-flex">
+            <div class="col-md-6 d-flex flex-wrap">
               <div class="column">
                 <div class="box d-flex pb-1 pt-1 align-items-center">
                   <img
@@ -362,58 +444,63 @@
         </div> -->
         <!-- End Marketing -->
       </div>
-      <!-- Footer -->
-      <footer class="bg-dark text-light py-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <img src="./imgs/Logo.png" alt="Logo" />
-              <p>Copyright © 2020 Landify UI Kit.</p>
-              <p>All rights reserved</p>
-              <div class="social-icons">
-                <img src="./imgs/ytb.png" alt="YouTube" />
-                <img src="./imgs/web.png" alt="Web" />
-                <img src="./imgs/x.png" alt="X" />
-                <img src="./imgs/ins.png" alt="Instagram" />
-              </div>
-            </div>
+    </section>
 
-            <div class="col-md-7">
-              <div class="row">
-                <div class="col-md-4">
-                  <h3>Company</h3>
-                  <p>About us</p>
-                  <p>Blog</p>
-                  <p>Contact us</p>
-                  <p>Pricing</p>
-                  <p>Testimonials</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>Support</h3>
-                  <p>Terms of service</p>
-                  <p>Help center</p>
-                  <p>Legal</p>
-                  <p>Privacy policy</p>
-                  <p>Status</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>Stay up to date</h3>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your email Address" />
-                    <!-- <button class="btn btn-primary" type="button">
+    <!-- Footer -->
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="./imgs/Logo.png" alt="Logo" class="imglogo" />
+            <p>Copyright © 2020 Landify UI Kit.</p>
+            <p>All rights reserved</p>
+            <div class="social-icons">
+              <img src="./imgs/ytb.png" alt="YouTube" />
+              <img src="./imgs/web.png" alt="Web" />
+              <img src="./imgs/x.png" alt="X" />
+              <img src="./imgs/ins.png" alt="Instagram" />
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Company</h3>
+                <p>About us</p>
+                <p>Blog</p>
+                <p>Contact us</p>
+                <p>Pricing</p>
+                <p>Testimonials</p>
+              </div>
+              <div class="col-md-4">
+                <h3>Support</h3>
+                <p>Terms of service</p>
+                <p>Help center</p>
+                <p>Legal</p>
+                <p>Privacy policy</p>
+                <p>Status</p>
+              </div>
+              <div class="col-md-4">
+                <h3>Stay up to date</h3>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your email Address" />
+                  <!-- <button class="btn btn-primary" type="button">
                       <i class="fas fa-paper-plane"></i>
                     </button> -->
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- End Footer -->
-    </section>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
   </body>
 </html>
