@@ -11,8 +11,9 @@
 }
 
 h6 {
-  color: #717171;
-  font-size: 15.14px;
+  color: rgba(113, 113, 113, 1);
+
+  font-size: 13.14px;
 }
 
 .container {
@@ -61,7 +62,6 @@ h6 {
 }
 
 .clients {
-  text-align: center;
   padding-top: 20px;
 }
 .our-custom {
@@ -75,12 +75,16 @@ h6 {
 }
 
 .suppression {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 537px;
+  margin: auto;
+  text-align: center;
 }
 h1 {
   font-size: 88.55px;
   font-weight: bold;
-  line-height: 52.9px;
-  text-align: center;
 }
 
 .centered-image {
@@ -92,8 +96,8 @@ h1 {
 
 .item-info {
   max-width: 300px;
-  flex: 1 1 100%;
   box-sizing: border-box;
+  margin: 10px auto;
 }
 
 .centered-image {
@@ -130,33 +134,35 @@ h1 {
 }
 .mkt {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around; 
 }
-.mkt-info {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #4d4d4d;
-  padding: 10px;
-  border: #263238;
-  background: #f5f7fa;
 
-  border-radius: 10px;
-  text-align: center;
-  width: 70%;
-  height: 60%;
-  border: 2px solid white;
-  box-shadow: 0px 5.57px 11.14px 0px #abbed166;
-}
 .mkt-img {
   position: relative;
   max-width: 437px;
+  width: 100%; /
 }
+
 .mktimg {
-  width: 400px;
-  height: 300px;
+  width: 100%; 
+  height: auto;
 }
+
+.mkt-info {
+  position: relative;
+  color: #4d4d4d;
+  bottom: 100px;
+  padding: 20px 0px 10px 0px;
+  background: #f5f7fa;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%; 
+  margin: 0 auto;
+  border: 2px solid white;
+  box-shadow: 0px 5.57px 11.14px 0px rgba(171, 190, 209, 0.4);
+}
+
 .colorgr {
   color: #4caf4f;
   text-decoration: none;
@@ -167,8 +173,7 @@ h1 {
 }
 .demo {
   text-align: center;
-  margin-top: 100px;
-  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer {
@@ -210,4 +215,8 @@ h1 {
   height: 7px;
   color: #4caf4f;
   padding-left: 5px;
+}
+.mkt-info h4 {
+  font-size: 25px;
+  color: rgba(113, 113, 113, 1);
 }
