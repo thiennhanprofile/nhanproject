@@ -8,10 +8,13 @@ body {
   font-family: "Jost";
 }
 
-@media (min-width: 992px) {
-  .offcanvas-body {
+@media (max-width: 991px) {
+  .nav-item a {
+   margin-left: 0px !important;
+  }
+  
+  /* .offcanvas-body {
     display: flex;
-    justify-content: space-between;
   }
   .offcanvas-body .icon-right {
     display: flex;
@@ -19,11 +22,12 @@ body {
     align-items: center;
   }
 
-  .offcanvas-body .nav-item {
-    margin-left: 86px;
+  .offcanvas-body .navbar-nav {
+
     color: rgba(69, 72, 104, 1);
     font-weight: 500;
-  }
+  } */
+ 
 }
 @media (max-width: 991px) {
   .centered-content {
@@ -31,10 +35,13 @@ body {
   }
 }
 .navbar {
-  margin: 32px 100px 34px 100px;
+  margin: 32px;
 }
-.offcanvas-body a {
+.nav-item a {
   font-size: 18px;
+  font-weight: 500;
+  line-height: 26.01px;
+  margin-left: 40px;
 }
 .banner {
   h1 {
@@ -69,7 +76,6 @@ body {
 
 .imgbanner {
   max-width: 100%;
-  height: auto;
   width: 697.5px;
   height: 697.5px;
 }
@@ -81,15 +87,169 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767px) {
+  .container{
+    .button {
+      margin: 10px;
+      width: 120px;
+      height: 42px;
+      font-size: 10px;
+      max-width: 100%;
+      border-radius: 7px;
+      color: #f8f9fa;
+    }
+  }
   .banner {
     flex-direction: column;
     text-align: center;
+    h1 {
+      font-size: 40px;
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500;
+      line-height: 50px;
+    }
+    h6 {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 25.2px;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+    }
+    .imgbanner {
+      max-width: 100%;
+      width: 397.5px;
+      height: 397.5px;
+    }
+    .button {
+      margin: 10px;
+      width: 120px;
+      height: 42px;
+      font-size: 10px;
+      max-width: 100%;
+      border-radius: 7px;
+      color: #f8f9fa;
+    }
   }
-
   .banner-info {
     padding-left: 0;
     margin-bottom: 30px;
+  }
+  .features {
+    margin: 20px;
+    h2 {
+      font-size: 30px !important;
+      line-height: 38px !important;
+      font-weight: 700 !important;
+    }
+    h4 {
+      font-size: 20px !important;
+      line-height: 31.2px;
+      font-weight: 600 !important;
+      color: rgba(69, 72, 104, 1);
+    }
+    h5 {
+      font-size: 14px !important;
+      color: rgba(69, 72, 104, 1);
+      line-height: 25.2px;
+      font-weight: 400;
+    }
+    .card-info {
+      text-align: center;
+    }
+    .card1,
+    .card-2 {
+      top: auto;
+      bottom: auto;
+    }
+    .imgft {
+      max-width: 100%;
+      width: 150px;
+      height: 136.96px;
+    }
+    .card-df {
+      width: 300px;
+      height: 350px;
+    }
+  }
+  .about1 {
+    text-align: center;
+    h2 {
+      font-size: 20px !important;
+      line-height: 38px !important;
+      font-weight: 700 !important;
+    }
+    h5 {
+      font-size: 14px !important;
+    }
+    .button {
+      margin: 10px;
+      width: 120px;
+      height: 42px;
+      font-size: 10px;
+      max-width: 100%;
+      border-radius: 7px;
+      color: #f8f9fa;
+    }
+  }
+  .about2 {
+    text-align: center;
+    margin-left: 0px !important;
+    h2 {
+      font-size: 20px !important;
+      line-height: 38px !important;
+      font-weight: 700 !important;
+    }
+    h5 {
+      font-size: 14px !important;
+    }
+    .button {
+      margin: 10px;
+      width: 120px;
+      height: 42px;
+      font-size: 10px;
+      max-width: 100%;
+      border-radius: 7px;
+      color: #f8f9fa;
+    }
+  }
+  .pricing {
+    h2 {
+      font-size: 20px !important;
+      line-height: 38px !important;
+      font-weight: 700 !important;
+    }
+    h5 {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 25.2px;
+      text-align: center;
+      max-width: 668px;
+    }
+    .pricing-info-pink{
+      top: 10px;
+      h3 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 38.4px;
+      }
+      h5 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25.2px;
+      }
+    }
+    .pricing-rate .pricing-info {
+      h3 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 38.4px;
+      }
+      h5 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25.2px;
+      }
+    }
   }
 }
 imgbanner-cs {
@@ -122,7 +282,7 @@ h6 {
   color: #f8f9fa;
 }
 .features {
-  padding: 160px 130px 178px 100px;
+  padding: 50px 20px 20px 20px;
   position: relative;
 }
 .features {
@@ -145,35 +305,25 @@ h6 {
     font-weight: 400;
   }
 }
-.card1 {
-  position: relative;
+.card-df {
   width: 300px;
   height: 400px;
-  top: 30px;
   border-radius: 48px;
-  background: rgb(255, 255, 255);
   font-weight: 700px;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 15px 50px 0px rgba(246, 83, 181, 0.08);
+  text-align: center;
+}
+.card1 {
+  position: relative;
+  top: 30px;
 }
 .card-2 {
   position: relative;
   top: 70px;
-  width: 300px;
-  height: 400px;
-  top: 70px;
   bottom: -40px;
-  border-radius: 48px;
-  background: rgb(255, 255, 255);
-  font-weight: 700px;
-  box-shadow: 0px 15px 50px 0px rgba(246, 83, 181, 0.08);
 }
-@media (max-width: 992px) {
-  .card1,
-  .card-2 {
-    position: static;
-    top: auto;
-    bottom: auto;
-  }
+@media (max-width: 767px) {
 }
 
 .imglogo {
@@ -181,6 +331,7 @@ h6 {
   height: 71px;
 }
 .imgft {
+  max-width: 100%;
   width: 180px;
   height: 146.96px;
 }
@@ -276,7 +427,10 @@ i {
   position: relative;
   padding-bottom: 50px;
 }
-.pricing-rate .pricing-info {
+.pricing-info-pink{
+  margin-bottom: 50px;
+}
+.pricing-rate .pricing-info{
   margin-bottom: 50px;
   h3 {
     font-size: 32px;
@@ -293,31 +447,29 @@ i {
 .text-pricing {
   max-width: 688px;
 }
-
-.button-cs-pink {
-  margin-top: 50px;
+.button {
+  margin: 10px;
   width: 190px;
   height: 62px;
+  max-width: 100%;
   border-radius: 10px;
+  color: #f8f9fa;
+}
+.button-cs-pink {
   border: none;
   background: rgba(252, 116, 208, 1);
-  color: #f8f9fa;
 }
 .text-ft {
   margin: 72px 76px 68px 50px;
 }
 
 .button-cs-none {
-  color: #f8f9fa;
-  width: 160px;
-  height: 62px;
-  border-radius: 10px;
   border: 1px;
   background-color: transparent;
   border: 1px solid white;
-  margin-left: 10px;
 }
 .button-custom {
+  margin-left: 40px;
   width: 128px;
   font-size: 18px;
   height: 50px;
@@ -338,6 +490,7 @@ i {
 }
 
 .pricing-info {
+  
   width: auto;
   width: 323px;
   max-height: auto;
@@ -349,6 +502,7 @@ i {
 }
 .pricing-info-pink {
   bottom: 50px;
+  
   position: relative;
   width: auto;
   width: 323px;
@@ -392,5 +546,4 @@ hr.new4 {
   width: 277px;
   height: 62px;
   background: rgba(255, 255, 255, 0.1);
-
 }
